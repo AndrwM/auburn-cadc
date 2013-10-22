@@ -99,14 +99,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 p {
   line-height: 24px;
   padding: 0 0 30px 0;
+  font-size: 18px;
+  font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-weight: 300;
 }
 
-/* line 26, ../sass/global.scss */
+/* line 28, ../sass/global.scss */
 a {
   text-decoration: none;
   color: #9cb33a;
 }
-/* line 29, ../sass/global.scss */
+/* line 31, ../sass/global.scss */
 a.btn {
   font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
   font-weight: 700;
@@ -114,23 +117,24 @@ a.btn {
   padding: 15px;
   background: #9cb33a;
   color: #fff;
+  display: inline-block;
   -webkit-transition-duration: 0.7s;
   -moz-transition-duration: 0.7s;
   -o-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
-/* line 36, ../sass/global.scss */
+/* line 39, ../sass/global.scss */
 a.btn:hover {
   background: #dd550c;
 }
 
-/* line 42, ../sass/global.scss */
+/* line 45, ../sass/global.scss */
 strong {
   font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
   font-weight: 700;
 }
 
-/* line 48, ../sass/global.scss */
+/* line 51, ../sass/global.scss */
 body {
   font-size: 18px;
   color: #404040;
@@ -139,16 +143,16 @@ body {
   background: #fff;
 }
 
-/* line 55, ../sass/global.scss */
+/* line 58, ../sass/global.scss */
 header {
   font-size: 16px;
   color: #fff;
 }
-/* line 59, ../sass/global.scss */
+/* line 62, ../sass/global.scss */
 header .tophead {
   background: #03244d;
 }
-/* line 62, ../sass/global.scss */
+/* line 65, ../sass/global.scss */
 header .tophead h1 a {
   height: 88px;
   width: 486px;
@@ -156,7 +160,7 @@ header .tophead h1 a {
   background: url("/images/logo-desktop.png") no-repeat 10px 14px;
   display: inline-block;
 }
-/* line 74, ../sass/global.scss */
+/* line 77, ../sass/global.scss */
 header .tophead nav.mainnav {
   padding: 18px 0 0px;
   height: 44px;
@@ -164,7 +168,7 @@ header .tophead nav.mainnav {
   *zoom: 1;
   overflow: visible;
 }
-/* line 80, ../sass/global.scss */
+/* line 83, ../sass/global.scss */
 header .tophead nav.mainnav li.navitem {
   float: left;
   width: 16.6%;
@@ -173,7 +177,7 @@ header .tophead nav.mainnav li.navitem {
   font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
   font-weight: 700;
 }
-/* line 86, ../sass/global.scss */
+/* line 89, ../sass/global.scss */
 header .tophead nav.mainnav li.navitem a {
   padding: 8px 10px 8px 14px;
   text-transform: uppercase;
@@ -185,42 +189,42 @@ header .tophead nav.mainnav li.navitem a {
   -o-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
-/* line 94, ../sass/global.scss */
+/* line 97, ../sass/global.scss */
 header .tophead nav.mainnav li.navitem:hover a {
   color: #dd550c;
 }
-/* line 97, ../sass/global.scss */
+/* line 100, ../sass/global.scss */
 header .tophead nav.mainnav li.navitem.current, header .tophead nav.mainnav li.navitem :active {
   background: #9cb33a;
 }
-/* line 99, ../sass/global.scss */
+/* line 102, ../sass/global.scss */
 header .tophead nav.mainnav li.navitem.current a, header .tophead nav.mainnav li.navitem :active a {
   border-right: 2px solid transparent;
   color: #fff;
 }
-/* line 104, ../sass/global.scss */
+/* line 107, ../sass/global.scss */
 header .tophead nav.mainnav li.navitem.hasdrop a img {
   top: 5px;
   float: right;
 }
-/* line 108, ../sass/global.scss */
+/* line 111, ../sass/global.scss */
 header .tophead nav.mainnav li.navitem.portfolios a img {
   top: -3px;
   float: right;
 }
-/* line 114, ../sass/global.scss */
+/* line 117, ../sass/global.scss */
 header .tophead nav.mainnav li.secondary {
   position: absolute;
   right: 0;
 }
-/* line 117, ../sass/global.scss */
+/* line 120, ../sass/global.scss */
 header .tophead nav.mainnav li.secondary.search {
   top: -60px;
   width: 310px;
 }
-/* line 120, ../sass/global.scss */
+/* line 123, ../sass/global.scss */
 header .tophead nav.mainnav li.secondary.search input {
-  width: 310px;
+  width: 280px;
   border: 1px solid #fff;
   background: transparent url("/images/nav-search.png") no-repeat 277px 7px;
   font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
@@ -235,25 +239,25 @@ header .tophead nav.mainnav li.secondary.search input {
   -o-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
-/* line 131, ../sass/global.scss */
+/* line 134, ../sass/global.scss */
 header .tophead nav.mainnav li.secondary.search input::-webkit-input-placeholder {
   color: #fff;
 }
-/* line 134, ../sass/global.scss */
+/* line 137, ../sass/global.scss */
 header .tophead nav.mainnav li.secondary.search input:focus {
   outline: none;
   border-color: #dd550c;
 }
-/* line 138, ../sass/global.scss */
+/* line 141, ../sass/global.scss */
 header .tophead nav.mainnav li.secondary.search input:hover, header .tophead nav.mainnav li.secondary.search input:active, header .tophead nav.mainnav li.secondary.search input:focus {
   opacity: 1;
 }
-/* line 143, ../sass/global.scss */
+/* line 146, ../sass/global.scss */
 header .tophead nav.mainnav li.secondary.globaldrop {
   top: -110px;
   width: 310px;
 }
-/* line 146, ../sass/global.scss */
+/* line 149, ../sass/global.scss */
 header .tophead nav.mainnav li.secondary.globaldrop a {
   padding: 12px 14px;
   text-transform: uppercase;
@@ -270,17 +274,17 @@ header .tophead nav.mainnav li.secondary.globaldrop a {
   -o-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
-/* line 157, ../sass/global.scss */
+/* line 160, ../sass/global.scss */
 header .tophead nav.mainnav li.secondary.globaldrop a:hover, header .tophead nav.mainnav li.secondary.globaldrop a:active, header .tophead nav.mainnav li.secondary.globaldrop a:focus {
   opacity: 1;
 }
-/* line 167, ../sass/global.scss */
+/* line 170, ../sass/global.scss */
 header .subhead {
   background: url("/images/slidebg-1.jpg") top center no-repeat;
   background-size: cover;
   height: 512px;
 }
-/* line 172, ../sass/global.scss */
+/* line 175, ../sass/global.scss */
 header .subhead .slideinfo {
   background: rgba(156, 179, 58, 0.8);
   padding: 26px 0;
@@ -288,7 +292,7 @@ header .subhead .slideinfo {
   position: absolute;
   width: 100%;
 }
-/* line 178, ../sass/global.scss */
+/* line 181, ../sass/global.scss */
 header .subhead .slideinfo h2 {
   font-size: 36px;
   font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
@@ -296,22 +300,152 @@ header .subhead .slideinfo h2 {
   margin-bottom: 10px;
   float: left;
 }
-/* line 184, ../sass/global.scss */
+/* line 187, ../sass/global.scss */
 header .subhead .slideinfo h3 {
   font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   float: left;
 }
-/* line 189, ../sass/global.scss */
+/* line 192, ../sass/global.scss */
 header .subhead .slideinfo a.btn {
   float: right;
   background: rgba(0, 0, 0, 0.6);
   margin-top: 10px;
   width: 200px;
 }
-/* line 194, ../sass/global.scss */
+/* line 197, ../sass/global.scss */
 header .subhead .slideinfo a.btn:hover {
   background: #fff;
-  color: #4e591d;
+  color: #9cb33a;
+}
+
+/* line 208, ../sass/global.scss */
+section.page {
+  overflow: hidden;
+  *zoom: 1;
+  padding-top: 30px;
+}
+/* line 212, ../sass/global.scss */
+section.page section.content {
+  width: 820px;
+  float: right;
+}
+/* line 216, ../sass/global.scss */
+section.page section.content .intro {
+  color: #646464;
+}
+/* line 218, ../sass/global.scss */
+section.page section.content .intro h1 {
+  font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-weight: 300;
+  line-height: 64px;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+/* line 224, ../sass/global.scss */
+section.page section.content .intro p {
+  font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-weight: 300;
+  line-height: 36px;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+/* line 232, ../sass/global.scss */
+section.page section.content .feature {
+  padding: 30px 0;
+  border-bottom: 1px dotted #ccc;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 236, ../sass/global.scss */
+section.page section.content .feature h2 {
+  line-height: 36px;
+  font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-weight: 600;
+  color: #404040;
+  font-size: 24px;
+  margin-top: -10px;
+}
+/* line 243, ../sass/global.scss */
+section.page section.content .feature.left img {
+  float: left;
+  margin-right: 30px;
+}
+/* line 247, ../sass/global.scss */
+section.page section.content .feature.full img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+/* line 254, ../sass/global.scss */
+section.page aside {
+  float: left;
+  width: 170px;
+  margin-right: 30px;
+  font-size: 16px;
+}
+/* line 260, ../sass/global.scss */
+section.page aside nav.sectionnav a {
+  padding: 12px;
+  display: block;
+  color: #404040;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+}
+/* line 265, ../sass/global.scss */
+section.page aside nav.sectionnav a:hover {
+  background: rgba(224, 224, 224, 0.4);
+}
+/* line 268, ../sass/global.scss */
+section.page aside nav.sectionnav a.current {
+  font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-weight: 700;
+  color: #9cb33a;
+  background: transparent;
+}
+/* line 275, ../sass/global.scss */
+section.page aside .meta {
+  margin: 30px 0;
+  background: #9cb33a;
+  padding-bottom: 10px;
+  color: #fff;
+}
+/* line 281, ../sass/global.scss */
+section.page aside .meta .author p {
+  font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 16px 22px 16px;
+  line-height: normal;
+}
+/* line 286, ../sass/global.scss */
+section.page aside .meta .author p span {
+  font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  display: block;
+}
+/* line 292, ../sass/global.scss */
+section.page aside .meta .author img.authorpic {
+  border-bottom: 2px #fff solid;
+}
+/* line 296, ../sass/global.scss */
+section.page aside .meta .links a {
+  margin: 0 16px;
+  color: #fff;
+  display: block;
+  padding: 12px 0;
+  border-top: 1px dashed rgba(0, 0, 0, 0.2);
+  font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-weight: 700;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+}
+/* line 304, ../sass/global.scss */
+section.page aside .meta .links a:hover {
+  color: rgba(0, 0, 0, 0.5);
 }

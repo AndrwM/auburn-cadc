@@ -21,6 +21,8 @@
 p {
   line-height: 24px;
   padding:0 0 30px 0;
+  font-size: 18px;
+  @include ff-light;
 }
 
 a {
@@ -32,6 +34,7 @@ a {
     padding: 15px;
     background: $green;
     color: #fff;
+    display: inline-block;
     @include fade;
     &:hover {
       background: $orange;
@@ -88,7 +91,7 @@ header {
           text-transform: uppercase;
           color: #fff;
           display: block;
-          border-right: 2px solid rgba(255, 255, 255, .3);
+          border-right: 2px solid transparentize(#fff, 0.7);
           @include fade;
         }
         &:hover a {
@@ -118,7 +121,7 @@ header {
           top: -60px;
           width: 310px;
           input {
-            width: 310px;
+            width: 280px;
             border: 1px solid #fff;
             background: transparent url('/images/nav-search.png') no-repeat 277px 7px;
             @include ff-bold;
@@ -193,7 +196,7 @@ header {
         width:200px;
         &:hover {
           background: #fff;
-          color: $dark-green;
+          color: $green;
         }
       }
     }
@@ -202,4 +205,107 @@ header {
 
 }
 
+section.page {
+  @include clearfix;
+  padding-top: 30px;
 
+  section.content {
+    width: 820px;
+    float: right;
+
+    .intro {
+      color: $mid-grey;
+      h1 {
+        @include ff-light;
+        line-height: 64px;
+        font-size:60px;
+        margin-bottom:10px;
+      }
+      p {
+        @include ff-light;
+        line-height: 36px;
+        font-size:24px;
+        padding-bottom: 10px;
+      }
+    }
+
+    .feature {
+      padding: 30px 0;
+      border-bottom: 1px dotted #ccc;
+      @include clearfix;
+      h2 {
+        line-height: 36px;
+        @include ff-semibold;
+        color: $dark-grey;
+        font-size: 24px;
+        margin-top: -10px;
+      }
+      &.left img {
+        float: left;
+        margin-right: 30px;
+      }
+      &.full img {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+  }
+  aside {
+    float: left;
+    width: 170px;
+    margin-right: 30px;
+    font-size: 16px;
+
+    nav.sectionnav a {
+      padding: 12px;
+      display: block;
+      color: $dark-grey;
+      @include fade;
+      &:hover {
+        background: transparentize($light-grey,0.6);
+      }
+      &.current {
+        @include ff-bold;
+        color: $green;
+        background: transparent;
+      }
+    }
+
+    .meta {
+      margin: 30px 0;
+      background: $green;
+      padding-bottom: 10px;
+      color: #fff;
+      .author {
+        p {
+          @include ff-bold;
+          font-size: 16px;
+          padding: 10px 16px 22px 16px;
+          line-height: normal;
+          span {
+            @include ff-reg;
+            font-style: italic;
+            display: block;
+          }
+        }
+        img.authorpic {
+          border-bottom: 2px #fff solid;
+        }
+      }
+      .links a {
+        margin: 0 16px;
+        color: #fff;
+        display: block;
+        padding: 12px 0;
+        border-top: 1px dashed transparentize(#000,0.8);
+        @include ff-bold;
+        @include fade;
+        &:hover {
+          color: transparentize(#000,0.5);
+        }
+      }
+    }
+
+  }
+}
