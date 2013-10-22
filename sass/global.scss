@@ -68,10 +68,6 @@ header {
       padding:10px 0 10px 10px;
       background: url('../images/logo-desktop.png') no-repeat 10px 14px;
       display: inline-block;
-      // @include fade;
-      // &:hover {
-      //   opacity: 0.6;
-      // }
     }
 
     nav.mainnav {
@@ -79,88 +75,94 @@ header {
       height: 44px;
       @include clearfix;
       overflow: visible;
-      // NAV ITEM
-      li.navitem {
-        float: left;
-        width: 16.6%;
-        display: block;
-        padding: 6px 0;
-        @include ff-bold;
-        a {
-          padding: 8px 10px 8px 14px;
-          text-transform: uppercase;
-          color: #fff;
+      
+      li{
+        // NAV ITEM
+        &.navitem {
+          float: left;
+          width: 16.6%;
           display: block;
-          border-right: 2px solid transparentize(#fff, 0.7);
-          @include fade;
-        }
-        &:hover a {
-          color: $orange;
-        }
-        &.current,:active {
-          background: $green;
+          padding: 6px 0;
+          @include ff-bold;
           a {
-            border-right: 2px solid transparent;
-            color: #fff;
-          }
-        }
-        &.hasdrop a img {
-          top: 5px;
-          float: right;
-        }
-        &.portfolios a img {
-          top: -3px;
-          float: right;
-        }
-      }
-      // SECONDARY NAV ITEM
-      li.secondary {
-        position: absolute;
-        right: 0;
-        &.search {
-          top: -60px;
-          width: 310px;
-          input {
-            width: 280px;
-            border: 1px solid #fff;
-            background: transparent url('../images/nav-search.png') no-repeat 277px 7px;
-            @include ff-bold;
-            font-size: 14px;
-            color: #fff;
-            text-transform: uppercase;
-            padding: 10px 14px;
-            opacity: 0.3;
-            @include fade;
-            &::-webkit-input-placeholder {
-              color:#fff;
-            }
-            &:focus {
-              outline: none;
-              border-color: $orange;
-            }
-            &:hover, &:active,&:focus {
-              opacity: 1;
-            }
-          }
-        }
-        &.globaldrop {
-          top: -110px;
-          width: 310px;
-          a {
-            padding: 12px 14px;
+            padding: 8px 10px 8px 14px;
             text-transform: uppercase;
             color: #fff;
             display: block;
-            @include ff-bold;
-            border: 1px solid #fff;
-            font-size: 14px;
-            background: url('../images/nav-hasdroparrow.gif') no-repeat 285px 17px;
-            opacity: 0.3;
+            border-right: 2px solid transparentize(#fff, 0.7);
             @include fade;
-            &:hover, &:active,&:focus {
-              opacity: 1;
+          }
+          &:hover a {
+            color: $orange;
+          }
+          &.current,:active {
+            background: $green;
+            a {
+              border-right: 2px solid transparent;
+              color: #fff;
             }
           }
+          &.hasdrop a img {
+            top: 5px;
+            float: right;
+          }
+          &.portfolios a img {
+            top: -3px;
+            float: right;
+          }
+        }
+        // SECONDARY NAV ITEM
+        &.secondary {
+          position: absolute;
+          right: 0;
+          &.search {
+            top: -60px;
+            width: 310px;
+            input {
+              width: 280px;
+              border: 1px solid #fff;
+              background: transparent url('../images/nav-search.png') no-repeat 277px 7px;
+              @include ff-bold;
+              font-size: 14px;
+              color: #fff;
+              text-transform: uppercase;
+              padding: 10px 14px;
+              opacity: 0.3;
+              @include fade;
+              &::-webkit-input-placeholder {
+                color:#fff;
+              }
+              &:focus {
+                outline: none;
+                border-color: $orange;
+              }
+              &:hover, &:active,&:focus {
+                opacity: 1;
+              }
+            }
+          }
+          &.globaldrop {
+            top: -110px;
+            width: 310px;
+            a {
+              padding: 12px 14px;
+              text-transform: uppercase;
+              color: #fff;
+              display: block;
+              @include ff-bold;
+              border: 1px solid #fff;
+              font-size: 14px;
+              background: url('../images/nav-hasdroparrow.gif') no-repeat 285px 17px;
+              opacity: 0.3;
+              @include fade;
+              &:hover, &:active,&:focus {
+                opacity: 1;
+              }
+            }
+          }
+        }
+        &:last-child a {
+          border-right: none;
         }
       }
     }
@@ -174,7 +176,7 @@ header {
 
     .slideinfo {
       background: transparentize($green, 0.2);
-      padding: 26px 0;
+      padding: 16px 0 26px 0;
       bottom: 0;
       position: absolute;
       width: 100%;
@@ -244,10 +246,18 @@ section.page {
         float: left;
         margin-right: 30px;
       }
+      &.right img {
+        float: right;
+        margin-left: 30px;
+      }
       &.full img {
         width: 100%;
         margin-bottom: 30px;
       }
+    }
+
+    :last-child {
+      border-bottom: none;
     }
 
   }
