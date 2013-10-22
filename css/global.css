@@ -157,7 +157,7 @@ header .tophead h1 a {
   height: 88px;
   width: 486px;
   padding: 10px 0 10px 10px;
-  background: url("/images/logo-desktop.png") no-repeat 10px 14px;
+  background: url("../images/logo-desktop.png") no-repeat 10px 14px;
   display: inline-block;
 }
 /* line 77, ../sass/global.scss */
@@ -226,7 +226,7 @@ header .tophead nav.mainnav li.secondary.search {
 header .tophead nav.mainnav li.secondary.search input {
   width: 280px;
   border: 1px solid #fff;
-  background: transparent url("/images/nav-search.png") no-repeat 277px 7px;
+  background: transparent url("../images/nav-search.png") no-repeat 277px 7px;
   font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -267,7 +267,7 @@ header .tophead nav.mainnav li.secondary.globaldrop a {
   font-weight: 700;
   border: 1px solid #fff;
   font-size: 14px;
-  background: url("/images/nav-hasdroparrow.gif") no-repeat 285px 17px;
+  background: url("../images/nav-hasdroparrow.gif") no-repeat 285px 17px;
   opacity: 0.3;
   -webkit-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
@@ -280,7 +280,7 @@ header .tophead nav.mainnav li.secondary.globaldrop a:hover, header .tophead nav
 }
 /* line 170, ../sass/global.scss */
 header .subhead {
-  background: url("/images/slidebg-1.jpg") top center no-repeat;
+  background: url("../images/slidebg-1.jpg") top center no-repeat;
   background-size: cover;
   height: 512px;
 }
