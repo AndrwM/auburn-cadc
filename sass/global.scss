@@ -309,3 +309,68 @@ section.page {
 
   }
 }
+
+footer {
+  background: $light-grey;
+  margin-top: 30px;
+  padding: 50px 0 100px 0;
+  @include clearfix;
+
+  nav.footernav {
+    @include clearfix;
+    font-size: 16px;
+    margin-bottom: 40px;
+    .col {
+      float: left;
+      width: 20%;
+      h3 {
+        @include ff-bold;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      a {
+        color: $dark-grey;
+        padding: 9px 0;
+        display: block;
+        &.more {
+          @include ff-bold;
+        }
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    float: left;
+    margin-top: 10px;
+    span {
+      display: block;
+      font-size: 14px;
+      margin-top: 4px;
+      a {
+        color: $orange;
+      }
+    }
+  }
+
+  .social {
+    float: right;
+    h4 {
+      @include ff-bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: $mid-grey;
+    }
+    a {
+      margin-right: 6px;
+      @include fade;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+}

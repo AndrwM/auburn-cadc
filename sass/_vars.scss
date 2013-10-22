@@ -34,5 +34,5 @@ $light-grey: #e0e0e0;
 }
 
 @mixin fade {
-  @include transition-duration(.7s);
+  @include transition-duration(.4s);
 }

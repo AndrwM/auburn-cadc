@@ -118,10 +118,10 @@ a.btn {
   background: #9cb33a;
   color: #fff;
   display: inline-block;
-  -webkit-transition-duration: 0.7s;
-  -moz-transition-duration: 0.7s;
-  -o-transition-duration: 0.7s;
-  transition-duration: 0.7s;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 /* line 39, ../sass/global.scss */
 a.btn:hover {
@@ -184,10 +184,10 @@ header .tophead nav.mainnav li.navitem a {
   color: #fff;
   display: block;
   border-right: 2px solid rgba(255, 255, 255, 0.3);
-  -webkit-transition-duration: 0.7s;
-  -moz-transition-duration: 0.7s;
-  -o-transition-duration: 0.7s;
-  transition-duration: 0.7s;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 /* line 97, ../sass/global.scss */
 header .tophead nav.mainnav li.navitem:hover a {
@@ -234,10 +234,10 @@ header .tophead nav.mainnav li.secondary.search input {
   text-transform: uppercase;
   padding: 10px 14px;
   opacity: 0.3;
-  -webkit-transition-duration: 0.7s;
-  -moz-transition-duration: 0.7s;
-  -o-transition-duration: 0.7s;
-  transition-duration: 0.7s;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 /* line 134, ../sass/global.scss */
 header .tophead nav.mainnav li.secondary.search input::-webkit-input-placeholder {
@@ -269,10 +269,10 @@ header .tophead nav.mainnav li.secondary.globaldrop a {
   font-size: 14px;
   background: url("/images/nav-hasdroparrow.gif") no-repeat 285px 17px;
   opacity: 0.3;
-  -webkit-transition-duration: 0.7s;
-  -moz-transition-duration: 0.7s;
-  -o-transition-duration: 0.7s;
-  transition-duration: 0.7s;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 /* line 160, ../sass/global.scss */
 header .tophead nav.mainnav li.secondary.globaldrop a:hover, header .tophead nav.mainnav li.secondary.globaldrop a:active, header .tophead nav.mainnav li.secondary.globaldrop a:focus {
@@ -389,10 +389,10 @@ section.page aside nav.sectionnav a {
   padding: 12px;
   display: block;
   color: #404040;
-  -webkit-transition-duration: 0.7s;
-  -moz-transition-duration: 0.7s;
-  -o-transition-duration: 0.7s;
-  transition-duration: 0.7s;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 /* line 265, ../sass/global.scss */
 section.page aside nav.sectionnav a:hover {
@@ -440,12 +440,95 @@ section.page aside .meta .links a {
   border-top: 1px dashed rgba(0, 0, 0, 0.2);
   font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
   font-weight: 700;
-  -webkit-transition-duration: 0.7s;
-  -moz-transition-duration: 0.7s;
-  -o-transition-duration: 0.7s;
-  transition-duration: 0.7s;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 /* line 304, ../sass/global.scss */
 section.page aside .meta .links a:hover {
   color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 313, ../sass/global.scss */
+footer {
+  background: #e0e0e0;
+  margin-top: 30px;
+  padding: 50px 0 100px 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 319, ../sass/global.scss */
+footer nav.footernav {
+  overflow: hidden;
+  *zoom: 1;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+/* line 323, ../sass/global.scss */
+footer nav.footernav .col {
+  float: left;
+  width: 20%;
+}
+/* line 326, ../sass/global.scss */
+footer nav.footernav .col h3 {
+  font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+/* line 331, ../sass/global.scss */
+footer nav.footernav .col a {
+  color: #404040;
+  padding: 9px 0;
+  display: block;
+}
+/* line 335, ../sass/global.scss */
+footer nav.footernav .col a.more {
+  font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-weight: 700;
+}
+/* line 338, ../sass/global.scss */
+footer nav.footernav .col a:hover {
+  color: #dd550c;
+}
+/* line 345, ../sass/global.scss */
+footer .copyright {
+  float: left;
+  margin-top: 10px;
+}
+/* line 348, ../sass/global.scss */
+footer .copyright span {
+  display: block;
+  font-size: 14px;
+  margin-top: 4px;
+}
+/* line 352, ../sass/global.scss */
+footer .copyright span a {
+  color: #dd550c;
+}
+/* line 358, ../sass/global.scss */
+footer .social {
+  float: right;
+}
+/* line 360, ../sass/global.scss */
+footer .social h4 {
+  font-family: 'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #646464;
+}
+/* line 367, ../sass/global.scss */
+footer .social a {
+  margin-right: 6px;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+/* line 370, ../sass/global.scss */
+footer .social a:hover {
+  opacity: 0.5;
 }
