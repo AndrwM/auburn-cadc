@@ -1,7 +1,205 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @import "compass/reset";
+@import "vars";
+
+//----------------- Base
+
+* {
+  position: relative;
+  -webkit-font-smoothing:antialiased;
+  &::-moz-selection { background: $orange; color: #fff; }
+  &::selection { background: $orange; color: #fff; }
+}
+
+.hide { display: none; }
+.seo { text-indent: -9999px; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1020px
+}
+
+p {
+  line-height: 24px;
+  padding:0 0 30px 0;
+}
+
+a {
+  text-decoration: none;
+  color: $green;
+  &.btn {
+    @include ff-bold;
+    font-size: 18px;
+    padding: 15px;
+    background: $green;
+    color: #fff;
+    @include fade;
+    &:hover {
+      background: $orange;
+    }
+  }
+}
+
+strong {
+  @include ff-bold;
+}
+
+//----------------- Layout
+
+body {
+  font-size: 18px;
+  color: $dark-grey;
+  @include ff-reg;
+  background: #fff;
+}
+
+header {
+  font-size: 16px;
+  color: #fff;
+
+  .tophead {
+    background: $blue;
+
+    h1 a {
+      height:88px;
+      width: 486px;
+      padding:10px 0 10px 10px;
+      background: url('/images/logo-desktop.png') no-repeat 10px 14px;
+      display: inline-block;
+      // @include fade;
+      // &:hover {
+      //   opacity: 0.6;
+      // }
+    }
+
+    nav.mainnav {
+      padding: 18px 0 0px;
+      height: 44px;
+      @include clearfix;
+      overflow: visible;
+      // NAV ITEM
+      li.navitem {
+        float: left;
+        width: 16.6%;
+        display: block;
+        padding: 6px 0;
+        @include ff-bold;
+        a {
+          padding: 8px 10px 8px 14px;
+          text-transform: uppercase;
+          color: #fff;
+          display: block;
+          border-right: 2px solid rgba(255, 255, 255, .3);
+          @include fade;
+        }
+        &:hover a {
+          color: $orange;
+        }
+        &.current,:active {
+          background: $green;
+          a {
+            border-right: 2px solid transparent;
+            color: #fff;
+          }
+        }
+        &.hasdrop a img {
+          top: 5px;
+          float: right;
+        }
+        &.portfolios a img {
+          top: -3px;
+          float: right;
+        }
+      }
+      // SECONDARY NAV ITEM
+      li.secondary {
+        position: absolute;
+        right: 0;
+        &.search {
+          top: -60px;
+          width: 310px;
+          input {
+            width: 310px;
+            border: 1px solid #fff;
+            background: transparent url('/images/nav-search.png') no-repeat 277px 7px;
+            @include ff-bold;
+            font-size: 14px;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 10px 14px;
+            opacity: 0.3;
+            @include fade;
+            &::-webkit-input-placeholder {
+              color:#fff;
+            }
+            &:focus {
+              outline: none;
+              border-color: $orange;
+            }
+            &:hover, &:active,&:focus {
+              opacity: 1;
+            }
+          }
+        }
+        &.globaldrop {
+          top: -110px;
+          width: 310px;
+          a {
+            padding: 12px 14px;
+            text-transform: uppercase;
+            color: #fff;
+            display: block;
+            @include ff-bold;
+            border: 1px solid #fff;
+            font-size: 14px;
+            background: url('/images/nav-hasdroparrow.gif') no-repeat 285px 17px;
+            opacity: 0.3;
+            @include fade;
+            &:hover, &:active,&:focus {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .subhead {
+    background: url('/images/slidebg-1.jpg') top center no-repeat;
+    background-size: cover;
+    height: 512px;
+
+    .slideinfo {
+      background: transparentize($green, 0.2);
+      padding: 26px 0;
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+      h2 {
+        font-size: 36px;
+        @include ff-light;
+        margin-bottom: 10px;
+        float: left;
+      }
+      h3 {
+        @include ff-reg;
+        font-size: 18px;
+        float: left;
+      }
+      a.btn {
+        float: right;
+        background: transparentize(#000, 0.4);
+        margin-top: 10px;
+        width:200px;
+        &:hover {
+          background: #fff;
+          color: $dark-green;
+        }
+      }
+    }
+
+  }
+
+}
+
 

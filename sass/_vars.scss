@@ -1,0 +1,40 @@
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+
+//----------------- Variables
+
+$orange: #dd550c;
+$blue: #03244d;
+$green: #9cb33a;
+$dark-green: #4e591d;
+
+$dark-grey: #404040;
+$mid-grey: #646464;
+$light-grey: #e0e0e0;
+$faint-grey: #ccc;
+
+//----------------- Mixins
+
+@mixin ff-bold {
+  font-family:'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-weight: 700;
+}
+
+@mixin ff-semibold {
+  font-family:'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-weight: 600;
+}
+
+@mixin ff-reg {
+  font-family:'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-weight: 400;
+}
+
+@mixin ff-light {
+  font-family:'myriad-pro', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-weight: 300;
+}
+
+@mixin fade {
+  @include transition-duration(.7s);
+}
